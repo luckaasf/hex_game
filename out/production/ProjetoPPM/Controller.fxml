@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="424.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label fx:id="machineLabel" layoutX="130.0" layoutY="121.0" prefHeight="17.0" prefWidth="198.0" />
+      <Button layoutX="281.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#onClickUndo" text="Undo" />
+      <Button fx:id="button_0_4" layoutX="339.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_0_3" layoutX="287.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_0_2" layoutX="235.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_0_1" layoutX="183.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_0_0" layoutX="131.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_1_4" layoutX="362.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_1_3" layoutX="310.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_1_2" layoutX="258.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_1_1" layoutX="206.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_1_0" layoutX="154.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_2_4" layoutX="385.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_2_3" layoutX="333.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_2_2" layoutX="281.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_2_1" layoutX="229.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_2_0" layoutX="177.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_3_4" layoutX="411.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_3_3" layoutX="359.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_3_2" layoutX="307.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_3_1" layoutX="255.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_3_0" layoutX="203.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_4_4" layoutX="437.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_4_3" layoutX="385.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_4_2" layoutX="333.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_4_1" layoutX="281.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Button fx:id="button_4_0" layoutX="229.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cellClicked" prefHeight="25.0" prefWidth="52.0" text="." />
+      <Line endX="159.0" layoutX="232.0" layoutY="150.0" startX="-100.0" stroke="BLUE" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="159.0" layoutX="329.0" layoutY="276.0" startX="-100.0" stroke="BLUE" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="231.0" layoutY="150.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="254.0" layoutY="175.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="277.0" layoutY="200.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="303.0" layoutY="225.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="328.0" layoutY="250.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="491.0" layoutY="150.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="514.0" layoutY="175.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="537.0" layoutY="200.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="563.0" layoutY="225.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-100.0" endY="25.0" layoutX="589.0" layoutY="250.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-78.0" layoutX="232.0" layoutY="175.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-78.0" layoutX="254.0" layoutY="200.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-73.0" layoutX="277.0" layoutY="225.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-78.0" layoutX="304.0" layoutY="250.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-78.0" layoutX="492.0" layoutY="175.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-78.0" layoutX="515.0" layoutY="199.0" startX="-100.0" stroke="RED" strokeWidth="2.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-74.0" layoutX="537.0" layoutY="224.0" startX="-100.0" stroke="RED">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Line endX="-76.0" layoutX="564.0" layoutY="249.0" startX="-100.0" stroke="RED">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+   </children>
+</AnchorPane>
