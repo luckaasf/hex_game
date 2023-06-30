@@ -69,24 +69,23 @@ object HexGame {
   def undo(boardState: List[Board]): (Board, List[Board]) = {
     boardState match {
       case Nil => (Nil, boardState)
-      case currentState :: Nil => (currentState, boardState) // Assim se o jogador fizer muitos undos ele volta ao estado inicial do jogo e é o máximo que pode chegar
+      case currentState :: Nil => (currentState, boardState)
       case _ :: _ :: previousState :: tail => (previousState, previousState :: tail)
     }
   }
 
-  // O método play faz o update no estado antigo do board e devolve o novo estado do jogo
   def play(board: Board, player: Cells.Cell, row: Int, col: Int): Board = {
-    board.updated(row, board(row).updated(col, player)) // não tenho a certeza se o metodo updated é puro (perguntar na discussão)
+    board.updated(row, board(row).updated(col, player))
   }
 
   private def emptyCells(board: Board): List[(Int, Int)] = {
     @tailrec
     def loop(row: Int, col: Int, acc: List[(Int, Int)]): List[(Int, Int)] = {
-      if (row >= board.length) { // a linha atual é maior que o tamanho do board, ou seja, deveria retornar o acumulador
+      if (row >= board.length) {
         acc.reverse
-      } else if (col >= board(row).length) { // se a coluna for maior que o tamanho da linha atual, então é a ultima coluna da linha portanto deve passar para a proxima linha (e começa na coluna 0)
+      } else if (col >= board(row).length) {
         loop(row + 1, 0, acc)
-      } else { // o resto dos casos, ou seja, as celulas ainda precisam ser avaliadas
+      } else {
         board(row)(col) match {
           case Cells.Empty => loop(row, col + 1, (row, col) :: acc)
           case _ => loop(row, col + 1, acc)
