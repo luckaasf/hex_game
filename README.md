@@ -4,6 +4,10 @@
 # TUI
 - ##### Run the Main.scala in order to play with the TUI
 - Since we need to display the board content in the TUI, its not possible to make it 100% pure, all it can be done is try to separate the impure functions from the pure functions, all the impure functions are located in the Display and UserInput objects
+
+
+<img src="screenshots/tui.png" width="400" height="400" alt="TUI">
+
 ---
 
 # GUI
@@ -28,6 +32,7 @@
 
 #### in the GUI the game state changes everytime a button is clicked
 
+<img src="screenshots/gui.png" width="500" height="400" alt="GUI">
 ---
 
 #### TODO
