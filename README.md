@@ -33,6 +33,6 @@
 #### The game state changes everytime a button is clicked
 
 <img src="screenshots/gui.png" width="500" height="400" alt="GUI">
----
+
 
 
