@@ -2,19 +2,19 @@
 
 ---
 # TUI
-- ##### Run the Main.scala in order to play with the TUI
+- ##### Run the Main.scala in order to play with the TUI, you can choose the board's size and a color for the player
 - Since we need to display the board content in the TUI, its not possible to make it 100% pure, all it can be done is try to separate the impure functions from the pure functions, all the impure functions are located in the Display and UserInput objects
-
+- 
 
 <img src="screenshots/tui.png" width="400" height="400" alt="TUI">
 
 ---
 
 # GUI
-- The GUI is a 5x5 version of the Hex game, since is not as flexible as the TUI you can only choose your color (blue or red) 
+- The GUI is a static 5x5 version of the Hex game, since is not as flexible as the TUI you can only choose your color (blue or red) 
 - #### Run the object FxApp inside the HexGameGUI in order to play with the GUI
 
-#### I had to find a way to memorize some important values in order to build the GUI, to do that some variables which in the TUI were immutable are now mutable
+#### I had to find a way to memorize some important values in order to build the GUI, therefore some variables which were previously immutable are now mutable
 > - private var currentBoard ... 
 > > - variable to memorize the currentboard
 > 
@@ -25,17 +25,15 @@
 > > - variable to memorize the color the human chooses
 > 
 > - private var machinePlayer ...
-> > - variable to memorize the machine color
+> > - variable to memorize the machine's color
 > 
 > - private var myRandom ...
 > > - variable to maintain the game randomness
+> > 
 
-#### in the GUI the game state changes everytime a button is clicked
+#### The game state changes everytime a button is clicked
 
 <img src="screenshots/gui.png" width="500" height="400" alt="GUI">
 ---
 
-#### TODO
-
-- difficulty feature, for now all the machine moves are random (i need to build an algorithm to make the machine moves closer to the human moves or something like that)
 
